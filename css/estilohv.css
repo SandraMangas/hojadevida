@@ -1,0 +1,263 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lado-izquierdo {
+  /*width: 250px;*/
+  width: 20%;
+  
+  background-color: rgb(243, 232, 232);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-top: 25px;
+  
+  color: hsl(261, 18%, 49%);
+  /*position: absolute;*/
+  text-align: justify;
+}
+
+h2 {
+  font-style: italic;
+  margin-top: 0mm;
+  padding-top: 20px;
+  color: hsl(261, 18%, 49%);
+  position: relative;
+}
+
+
+h3 {
+  font-variant: small-caps;
+  color: hsl(261, 18%, 49%);
+  position: relative;
+ }
+
+header{
+  
+}
+
+header div {
+  background-image: url('../../../../assets/u.distrital.jpg');
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+}
+
+header div:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(197, 192, 192, 0.2);
+}
+
+header div .img-profile {
+  width: 150px;
+  height: auto;
+  position: relative;
+  border-radius: 50%;
+  right: 30%;
+  bottom: 100px;
+  /*transition: border-radius linear 1s;*/
+  transition: transform ease-in-out 1s;
+  transform: scale(auto);
+}
+
+header div .img-profile:hover {
+  /*border-radius: 50%;*/
+  transform: scale(1.2);
+}
+
+.menu-navegacion {
+  font-style: italic;
+  font-variant: capitalize;
+  font-size: small;
+ /* border: 1px solid rgb(250, 0, 33);
+ padding-top: 40px 40px 10px 5px;*/
+  /*height: 20px;*/
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(235, 228, 228);
+  z-index: 1000;
+  position: sticky;
+  top:0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+  /*transition: transform ease-in-out 1s;
+  transform: scale(1);*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*.menu-navegacion:hover {
+  transform: scale(1.2);
+}
+*/
+
+/*.menu-table{
+  margin-left: 0px;
+  background-color: rgb(243, 232, 232);
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  /*empty-cells: hide;
+  border-collapse: collapse;
+}
+*/
+
+.menu-navegacion a {
+  text-decoration: none;
+  color: rgb(128, 128, 128);
+  padding: 0;
+  margin: 0px;
+  transition: transform ease-in-out 0.3s;
+  transform: scale(1);
+}
+
+.menu-navegacion a:hover {
+  transform: scale(1.1);
+}
+
+.text-gray {
+  color: rgb(128, 128, 128);
+  font-weight: bolder;
+  font-style: italic;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 10px;
+}
+
+aside article p {
+  text-align:start;
+  padding-bottom: 20px;
+  
+}
+
+aside article ul li {
+  text-align:start;
+  
+}
+
+article p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.cargo {
+  font-weight: bolder;
+  color: #776794;
+  }
+
+.nombre-empresa {
+  font-weight: bolder;
+  color: #776794;
+}
+
+section { /*.lado-derecho*/
+  margin-left: 5px;
+  padding: 20px;
+ 
+}
+
+.formacion {
+  font-weight: bolder;
+  color: #776794;
+}
+
+ul li {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+ul {
+  margin-bottom: 30px;
+  
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.lado-derecho {
+ /*margin-left: 270px;*/
+ /*padding-left: 5px;*/
+ width:75%;
+}
+
+.img-contacto {
+  width: 20px;
+  display: block;
+}
+/*
+#datos-contacto{
+  transform: translate(0px, 0px);
+  transition: transform ease-in-out 0.3s;
+}
+
+#datos-contacto:hover {
+  transform: translate(100px, -20px);
+}
+*/
+footer{
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.img-proyecto {
+  width: 250px;
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+}
+
+.proyectos{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menu-navegacion {
+  display: none;
+}
+.menu-hamburguesa {
+  display: block;
+}
+}
